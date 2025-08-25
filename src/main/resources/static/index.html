@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WLU Exam Scheduler</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <h1>WLU Exam Scheduler</h1>
+    <nav>
+      <button id="viewAllBtn" class="btn">View All Exams</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="search">
+      <form id="searchForm" class="search-form">
+        <input id="courseInput" type="text" placeholder="Enter course code (e.g., BU111)" required />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <footer class="container muted">API: <code>/api/exams</code>, <code>/api/search?courseCode=...</code></footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.idea/
+*.iml
+*.log
+/logs/
+/target/
+/.classpath
+/.project
+/.settings/
+/.DS_Store
+/.vscode/
+/node_modules/
+/.env
